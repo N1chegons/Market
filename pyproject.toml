@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "market"
+version = "0.1.0"
+description = ""
+authors = ["Bogdan"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["all"], version = "^0.111.0"}
+asyncpg = "^0.29.0"
+fastapi-users = {extras = ["sqlalchemy"], version = "^13.0.0"}
+alembic = "^1.13.2"
+psycopg2 = "^2.9.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
